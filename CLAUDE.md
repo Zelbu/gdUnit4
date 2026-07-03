@@ -4,11 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Shared AI Harness Rules
 
-Security, bot identity, commit style, and PR prose conventions are defined centrally in the AI harness:
+Security, bot identity, commit style, PR prose, GDScript formatting, and documentation conventions
+are defined centrally in the AI harness:
 
 - Security: `../ai-harness-core/shared-rules/security.md`
 - Bot conventions: `../ai-harness-core/shared-rules/bot-conventions.md`
 - PR and commit style: `../ai-harness-core/shared-rules/pr-style.md`
+- GDScript style: `../ai-harness-core/shared-rules/gdscript-style.md`
+- Documentation style: `../ai-harness-core/shared-rules/documentation-style.md`
 
 ## What This Project Is
 
@@ -123,7 +126,7 @@ C#-specific tests live under `test/dotnet/`.
 
 ## Coding Style
 
-**GDScript:** Follow [Godot's GDScript style guide](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html).
+**GDScript:** Follow the shared rule `../ai-harness-core/shared-rules/gdscript-style.md`.
 Enforced by gdlint with these key limits (`.gdlintrc`):
 
 - Max line length: 140
@@ -175,6 +178,8 @@ section grouping conventions, mocking, scene runner, and auto-free usage.
 
 The `documentation/` folder is a Jekyll site built with the [just-the-docs](https://just-the-docs.com/) theme (Ruby 3.4.7, Jekyll ~4.4.1).
 It is published to GitHub Pages via `.github/workflows/deploy-gh-pages.yml`, triggered on release events or manual dispatch.
+
+All documentation content must follow the shared rule `../ai-harness-core/shared-rules/documentation-style.md`.
 
 ### Structure
 
